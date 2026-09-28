@@ -1,0 +1,14 @@
+import random
+number=int(input("Guess a number in between 1 to 100:"))
+comp_number=random.randint(1,100)
+guess=0
+while number!=comp_number:
+    if number>comp_number:
+        print("Try another lower value...")
+    elif number<comp_number:
+        print("Try another higher value...")
+    guess+=1
+    number=int(input("Enter your next guess:"))
+print("You guessed right!")
+print("Number of guesses:",guess+1)
+

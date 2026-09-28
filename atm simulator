@@ -1,0 +1,31 @@
+print("------WELCOME TO ATM------")
+balance=10000
+correct_pin="4321"
+pin=input("Enter you ATM pin:")
+if pin==correct_pin:
+    print("LOGIN SUCCESSFULL....")
+    choice=int(input("Enter your choice (1.check balance 2.deposit 3.withdrawal 4.exit):"))
+    if choice==1:
+        print("Your balance is:",balance)
+    elif choice==2:
+        amount=float(input("Enter your amount to deposit:"))
+        if amount>0:
+            balance+=amount
+            print("Balance:",balance)
+            print("DEPOSITED SUCCESSFULLY")
+        else:
+            print("Invalid amount")
+    elif choice==3:
+        amount=float(input("Enter amount to withdrwal:"))
+        if amount>balance:
+            print("INSUFFICIENT AMOUNT")
+        else:
+            balance-=amount
+            print("Balance is:",balance)
+            print("WITHDRWAL DONE")
+    elif choice==4:
+        print("Thank you for using ATM services...")
+    else:
+        print("Enter valid choice")
+else:
+    print("Incorrect pin .TRY AGAIN")

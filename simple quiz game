@@ -1,0 +1,44 @@
+score=0
+print("----SIMPLE QUIZ GAME----")
+print("Answer the following questions--")
+answer1=input("What is the capital of India?")
+if answer1=="New Delhi":
+    print("Correct answer")
+    score+=1
+else:
+    print("Wrong")
+
+answer2=input("What is our national fruit?")
+if answer2=="Mango":
+    print("Correct answer")
+    score+=1
+else:
+    print("Wrong")
+
+answer3=input("What is the name of our national animal?")
+if answer3=="Tiger":
+    print("Correct answer")
+    score+=1
+else:
+    print("Wrong")
+
+answer4=input("Where is red fort?")
+if answer4=="New Delhi":
+    print("Correct answer")
+    score+=1
+else:
+    print("Wrong")
+    
+answer5=input("Where is Taj Mahal?")
+if answer4=="Agra":
+    print("Correct answer")
+    score+=1
+else:
+    print("Wrong")
+
+print("----FINAL RESULT----")
+print("your score is:",score,"/5")
+
+
+
+

@@ -1,0 +1,12 @@
+import random
+import string           #gives us readymade character collection
+length=int(input("Enter your password length:"))
+characters=string.ascii_letters+string.digits+"!@$&*^%#"
+password=""
+if length<4:
+    print("Password should be atleast 4 characters.....")
+else:
+    for i in range(length):
+        password=password+random.choice(characters)
+    print("Your password is:",password)
+

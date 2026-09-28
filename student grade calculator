@@ -1,0 +1,33 @@
+n= int(input("How many students are there?"))
+for i in range(0,n):
+    print("Student",i+1)
+    name=input("Enter name of student:")
+    Maths=float(input("Enter maths marks:"))
+    Science=float(input("Enter science marks:"))
+    Physics=float(input("Enter physics marks:"))
+    English=float(input("Enter english marks:"))
+    total=Maths+Science+Physics+English
+    percentage=total/4
+    if percentage>=90:
+        Grade="A+"
+    elif percentage>=80:
+        Grade="A"
+    elif percentage>=60:
+        Grade="B"
+    elif percentage>=50:
+        Grade="C"
+    elif percentage>=45:
+        Grade="D"
+    else:
+        Grade="E"
+
+    print("-----RESULT-----")
+    print("Name:",name)
+    print("Total marks:",total)
+    print("Percenatge:",percentage)
+    print("Grade:",Grade)
+    if percentage>35:
+        print("RESULT:PASS")
+    else:
+        print("RESULT:FAIL")
+
